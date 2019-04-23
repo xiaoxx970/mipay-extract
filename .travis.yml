@@ -12,7 +12,7 @@ addons:
 before_script:
 - unset _JAVA_OPTIONS
 script:
-- bash deploy.sh
+- bash java --version
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
