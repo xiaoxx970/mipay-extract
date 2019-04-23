@@ -28,10 +28,10 @@ if [[ "$1" == "rom" ]]; then
     do
         $aria2c ${i//$EU_VER/$VER}
     done
-    base_url="https://github.com/linusyang92/mipay-extract/releases/download/$VER"
-    $aria2c $base_url/eufix-MiMix2-$VER.zip
-    $aria2c $base_url/mipay-MIMIX2-$VER.zip
-    $aria2c $base_url/eufix-appvault-MIMIX2-$VER.zip
+    base_url="https://github.com/xiaoxx970/mipay-extract/releases/download/$VER"
+    $aria2c $base_url/eufix-Mi6-$VER.zip
+    $aria2c $base_url/mipay-MI6-$VER.zip
+    $aria2c $base_url/eufix-appvault-MI6-$VER.zip
     exit 0
 fi
 for i in "${urls[@]}"
@@ -41,6 +41,6 @@ done
 [[ "$1" == "keep"  ]] || rm -rf miui-*/ miui_*.zip
 for i in "${eu_urls[@]}"
 do
-   bash cleaner-fix.sh --trafficfix --nofbe "$i" || exit 1
+   bash cleaner-fix.sh --clock "$i" || exit 1
 done
 exit 0
