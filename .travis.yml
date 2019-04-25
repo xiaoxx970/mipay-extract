@@ -1,10 +1,6 @@
 language: java
 jdk:
 - oraclejdk8
-branches:
-  except:
-  - master
-  - save
 addons:
   apt:
     packages:
