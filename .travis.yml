@@ -8,7 +8,7 @@ addons:
 before_script:
 - unset _JAVA_OPTIONS
 script:
-- bash java --version
+- java --version
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
