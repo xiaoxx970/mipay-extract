@@ -21,3 +21,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: xiaoxx970/mipay-extract
+    tags: true

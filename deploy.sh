@@ -7,12 +7,12 @@ declare -a urls=(
 
 )
 
-EU_VER=9.4.11
+EU_VER=9.4.25
 
 declare -a eu_urls=(
 
 # EU Rom URLs
-'https://netix.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/9.4.11/xiaomi.eu_multi_MI6_9.4.11_v10-8.0.zip'
+'https://nchc.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/9.4.25/xiaomi.eu_multi_MI6_9.4.25_v10-9.zip'
 
 )
 

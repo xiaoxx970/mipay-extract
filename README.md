@@ -1,7 +1,7 @@
 # Mi Pay Extractor
 Extract Mi Pay from MIUI China Rom
 
-[![Build Status](https://travis-ci.org/linusyang92/mipay-extract.svg)](https://travis-ci.org/linusyang92/mipay-extract)
+[![Build Status](https://travis-ci.org/xiaoxx970/mipay-extract.svg?branch=master)](https://travis-ci.org/xiaoxx970/mipay-extract)
 
 **Use at your own risk!**
 
