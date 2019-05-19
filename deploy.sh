@@ -1,18 +1,18 @@
 #!/bin/bash
-
+# http://www.miui.com/download-330.html
 declare -a urls=(
 
 # Rom URLs
-'http://bigota.d.miui.com/9.4.11/miui_MI6_9.4.11_692ddc81ce_8.0.zip'
+'http://bigota.d.miui.com/9.5.16/miui_MI6_9.5.16_683d50274b_9.0.zip'
 
 )
 
-EU_VER=9.4.25
-
+EU_VER=9.5.16
+# https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/
 declare -a eu_urls=(
 
 # EU Rom URLs
-'https://nchc.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/9.4.25/xiaomi.eu_multi_MI6_9.4.25_v10-9.zip'
+'https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/9.5.16/xiaomi.eu_multi_MI6_9.5.16_v10-9.zip/download?use_mirror=netcologne&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fxiaomi-eu-multilang-miui-roms%2Ffiles%2Fxiaomi.eu%2FMIUI-WEEKLY-RELEASES%2F9.5.16%2F&use_mirror=netcologne#'
 
 )
 
