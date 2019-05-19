@@ -32,6 +32,7 @@ if [[ "$1" == "rom" ]]; then
     $aria2c $base_url/eufix-Mi6-$VER.zip
     $aria2c $base_url/mipay-MI6-$VER.zip
     $aria2c $base_url/eufix-appvault-MI6-$VER.zip
+    $aria2c $base_url/eufix-force-fbe-oreo.zip
     exit 0
 fi
 for i in "${urls[@]}"
