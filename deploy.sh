@@ -3,23 +3,23 @@
 declare -a urls=(
 
 # Rom URLs
-'http://bigota.d.miui.com/9.5.16/miui_MI6_9.5.16_683d50274b_9.0.zip'
+'http://bigota.d.miui.com/9.7.18/miui_MI6_9.7.18_46bc405cdd_9.0.zip'
 
 )
 
-EU_VER=9.5.16
+EU_VER=9.7.18
 # https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/
 declare -a eu_urls=(
 
 # EU Rom URLs
-'https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/9.5.16/xiaomi.eu_multi_MI6_9.5.16_v10-9.zip/download?use_mirror=netcologne&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fxiaomi-eu-multilang-miui-roms%2Ffiles%2Fxiaomi.eu%2FMIUI-WEEKLY-RELEASES%2F9.5.16%2F&use_mirror=netcologne#'
+'https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/9.7.18/xiaomi.eu_multi_MI6_9.7.18_v10-9.zip/download?use_mirror=netcologne'
 
 )
 
 command -v dirname >/dev/null 2>&1 && cd "$(dirname "$0")"
 if [[ "$1" == "rom" ]]; then
     set -e
-    base_dir=/sdcard/TWRP
+    base_dir=~
     [ -z "$2" ] && VER="$EU_VER" || VER=$2
     [ -d "$base_dir" ] || base_dir=.
     aria2c_opts="--check-certificate=false --file-allocation=trunc -s10 -x10 -j10 -c"
