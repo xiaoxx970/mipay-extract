@@ -3,16 +3,16 @@
 declare -a urls=(
 
 # Rom URLs
-'http://bigota.d.miui.com/9.7.18/miui_MI6_9.7.18_46bc405cdd_9.0.zip'
+'http://bigota.d.miui.com/9.8.1/miui_MI6_9.8.1_e97c21e683_9.0.zip'
 
 )
 
-EU_VER=9.7.18
+EU_VER=9.8.1
 # https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/
 declare -a eu_urls=(
 
 # EU Rom URLs
-'https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/9.7.18/xiaomi.eu_multi_MI6_9.7.18_v10-9.zip/download?use_mirror=netcologne'
+'https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/9.8.1/xiaomi.eu_multi_MI6_9.8.1_v10-9.zip/download?use_mirror=netcologne'
 
 )
 
