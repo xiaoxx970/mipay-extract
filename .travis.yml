@@ -1,6 +1,6 @@
 language: java
 jdk:
-- oraclejdk
+- oraclejdk11
 addons:
   apt:
     packages:
