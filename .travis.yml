@@ -7,8 +7,6 @@ addons:
     - python2.7
 before_script:
 - unset _JAVA_OPTIONS
-- pip install AdvancedHTMLParser
-- export VERSION_TAG=`python getlink.py ver`
 script:
 - bash deploy.sh
 before_deploy:
