@@ -1,13 +1,13 @@
 #!/bin/bash
 
 pip install AdvancedHTMLParser --user
-export VERSION_TAG=`python getlink.py ver`
+export TRAVIS_TAG=`python getlink.py ver`
 
 # http://www.miui.com/download-330.html
 # Rom URLs
 declare -a urls=(`python getlink.py cn`)
 
-EU_VER=$VERSION_TAG
+EU_VER=$TRAVIS_TAG
 # https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/
 # EU Rom URLs
 declare -a eu_urls=(`python getlink.py eu`)

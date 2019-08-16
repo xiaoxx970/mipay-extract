@@ -13,7 +13,7 @@ before_deploy:
 # Set up git user name and tag this commit
 - git config --local user.name "xiaoxx_travis"
 - git config --local user.email "me@xiaoxx.cc"
-- git tag $VERSION_TAG
+- git tag $TRAVIS_TAG
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
