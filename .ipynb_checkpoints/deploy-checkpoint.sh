@@ -2,12 +2,12 @@
 
 # http://www.miui.com/download-330.html
 # Rom URLs
-declare -a urls=(`python getlink.py cn`)
+declare -a urls=('http://bigota.d.miui.com/9.8.9/miui_MI6_9.8.9_189184ac45_9.0.zip')
 
-EU_VER=$VERSION_TAG
+EU_VER=9.8.9
 # https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/
 # EU Rom URLs
-declare -a eu_urls=(`python getlink.py eu`)
+declare -a eu_urls=('https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/9.8.9/xiaomi.eu_multi_MI6_9.8.9_v10-9.zip/download?use_mirror=netcologne')
 
 command -v dirname >/dev/null 2>&1 && cd "$(dirname "$0")"
 if [[ "$1" == "rom" ]]; then

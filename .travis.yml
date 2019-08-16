@@ -7,8 +7,15 @@ addons:
     - python2.7
 before_script:
 - unset _JAVA_OPTIONS
+- pip install AdvancedHTMLParser
+- export VERSION_TAG=`python getlink.py ver`
 script:
 - bash deploy.sh
+before_deploy:
+# Set up git user name and tag this commit
+- git config --local user.name "xiaoxx_travis"
+- git config --local user.email "me@xiaoxx.cc"
+- git tag $VERSION_TAG
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
