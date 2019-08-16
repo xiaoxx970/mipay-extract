@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export TRAVIS_TAG=`python getlink.py ver`
 # http://www.miui.com/download-330.html
 # Rom URLs
 declare -a urls=(`python getlink.py cn`)
