@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pip install AdvancedHTMLParser
+pip install AdvancedHTMLParser --user
 export VERSION_TAG=`python getlink.py ver`
 
 # http://www.miui.com/download-330.html
