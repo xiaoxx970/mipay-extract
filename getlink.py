@@ -6,16 +6,32 @@ PY2 = sys.version_info[0] == 2
 PY3 = sys.version_info[0] == 3
 if PY3:
     import urllib.request
-    content = urllib.request.urlopen("http://www.miui.com/download-330.html").read()
+    req = urllib.request.Request(
+        "https://miuiver.com/sagit_developer_recovery/", 
+        data=None, 
+        headers={
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'
+        }
+    )
+
+    content = urllib.request.urlopen(req).read()
 else:
     import urllib
-    content = urllib.urlopen("http://www.miui.com/download-330.html").read()
+    req = urllib.Request(
+        "https://miuiver.com/sagit_developer_recovery/", 
+        data=None, 
+        headers={
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'
+        }
+    )
+
+    content = urllib.urlopen(req).read()
 
 parser = AdvancedHTMLParser.AdvancedHTMLParser()
 parser.parseStr(content)
-link_cn = parser.getElementsByClassName("to_miroute").getElementsByTagName("a")[1].getAttribute("href")
+link_cn = parser.getElementsByTagName("a")[5].getAttribute("href")
 ver = link_cn.split('/')[3]
-link_eu = 'https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/'+ver+'/xiaomi.eu_multi_MI6_'+ver+'_v10-9.zip/download?use_mirror=netcologne'
+link_eu = 'https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/'+ver+'/xiaomi.eu_multi_MI6_'+ver+'_v11-9.zip/download?use_mirror=netcologne'
 #print(sys.argv)
 
 if sys.argv[1]=='cn':
