@@ -16,16 +16,12 @@ if PY3:
 
     content = urllib.request.urlopen(req).read()
 else:
-    import urllib
-    req = urllib.Request(
-        "https://miuiver.com/sagit_developer_recovery/", 
-        data=None, 
-        headers={
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'
-        }
-    )
-
-    content = urllib.urlopen(req).read()
+    import urllib2
+    url = 'https://miuiver.com/sagit_developer_recovery/'
+    user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'  
+    headers = { 'User-Agent' : user_agent }
+    request = urllib2.Request(url, None, headers)  
+    content = urllib2.urlopen(request).read()
 
 parser = AdvancedHTMLParser.AdvancedHTMLParser()
 parser.parseStr(content)
