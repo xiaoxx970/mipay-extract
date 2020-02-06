@@ -5,7 +5,7 @@ Extract Mi Pay from MIUI China Rom
 
 **Use at your own risk!**
 
-过脚本自动获取链接的方式做到持续集成，可以全自动生成刷机包而不用每次改两个链接以及git commit,tag,push等，在[Travis ci](https://travis-ci.org/xiaoxx970/mipay-extract)开启了定时，每周执行一次，自动出炉修复刷机包并且上传到[release页面](https://github.com/xiaoxx970/mipay-extract/releases)。
+通过脚本自动获取链接的方式做到持续集成，可以全自动生成刷机包而不用每次改两个链接以及git commit,tag,push等，在[Travis ci](https://travis-ci.org/xiaoxx970/mipay-extract)开启了定时，每周执行一次，自动出炉修复刷机包并且上传到[release页面](https://github.com/xiaoxx970/mipay-extract/releases)。
 
 中文教程：[小米6刷入miui欧洲版以及安装小米钱包、应用商店APP,开启全盘加密](https://xiaoxx.cc/miui-eu)
 
