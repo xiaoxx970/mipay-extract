@@ -25,7 +25,7 @@ else:
 
 parser = AdvancedHTMLParser.AdvancedHTMLParser()
 parser.parseStr(content)
-link_cn = parser.getElementsByTagName("a")[5].getAttribute("href")
+link_cn = parser.getElementsByTagName("table")[0].getElementsByClassName("link").getElementsByTagName("a")[0].getAttribute("href")
 ver = link_cn.split('/')[3]
 link_eu = 'https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/'+ver+'/xiaomi.eu_multi_MI6_'+ver+'_v11-9.zip/download?use_mirror=netcologne'
 #print(sys.argv)
